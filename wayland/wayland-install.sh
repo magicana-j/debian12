@@ -41,7 +41,13 @@ DSTDIR=~/.config/alacritty
 if [ ! -d $DSTDIR ]; then
   mkdir $DSTDIR
   cat << EOF >> ~/.config/alacritty/alacritty.toml
+[window]
+opacity = 0.8
 
+[font]
+size = 12.0
+
+EOF
 else
   if [ -n "$(ls -A $DSTDIR)" ]; then
     echo "Files exist.=> $DSTDIR"
