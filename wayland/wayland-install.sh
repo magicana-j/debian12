@@ -33,7 +33,13 @@ if [ ! -d $DSTDIR ]; then
 else
   if [ -n "$(ls -A $DSTDIR)" ]; then
     echo "Files exist.=> $DSTDIR"
-    cat << EOF >> ~/.config/alacritty/alacritty.toml
+  fi
+fi
+
+DSTDIR=~/.config/alacritty
+if [ ! -d $DSTDIR ]; then
+  mkdir $DSTDIR
+  cat << EOF >> ~/.config/alacritty/alacritty.toml
 [window]
 opacity = 0.8
 
@@ -41,16 +47,8 @@ opacity = 0.8
 size = 12.0
 
 EOF
-
-  fi
-fi
-
-DSTDIR=~/.config/alacritty
-if [ ! -d $DSTDIR ]; then
-  mkdir $DSTDIR
 else
   if [ -n "$(ls -A $DSTDIR)" ]; then
     echo "Files exist.=> $DSTDIR"
   fi
 fi
-
