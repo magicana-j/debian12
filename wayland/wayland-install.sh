@@ -1,7 +1,7 @@
 #!/bin/sh
 sudo apt update
 sudo apt install swaybg swayidle swaylock xdg-desktop-portal-wlr xwayland
-sudo apt install wdisplays kanshi waybar mako picom grimshot fuzzel foot alacritty fonts-font-awesome
+sudo apt install wdisplays kanshi waybar mako picom grom slurp grimshot fuzzel foot alacritty fonts-font-awesome
 sudo apt install gammastep
 sudo apt install brightnessctl clipman network-manager-gnome
 sudo apt install pipewire-audio wireplumber pipewire-media-session-
