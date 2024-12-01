@@ -2,9 +2,11 @@
 
 sudo apt install wayfire
 
-DIRNAME=~/.config/wayfire
-if [ -d $DIRNAME ]; then
-    mkdir $DIRNAME
-  else
-    echo "Files exist."
+DSTDIR=~/.config/wayfire
+if [ ! -d $DSTDIR ]; then
+  mkdir $DSTDIR
+else
+  if [ -n "$(ls -A $DSTDIR)" ]; then
+    echo "Files exist.=> $DSTDIR"
+  fi
 fi
