@@ -4,3 +4,4 @@ sudo apt install htop vim neovim nano neofetch git ufw gufw timeshift flatpak po
 im-connfig -n fcitx5
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 LANG=C xdg-user-dirs-gtk-update
+sudo apt install gimp inkscape vlc shotcut audacity handbrake
