@@ -7,7 +7,6 @@ sudo apt install brightnessctl clipman network-manager-gnome
 sudo apt install pipewire-audio wireplumber pipewire-media-session-pulse
 sudo apt install pavucontrol playerctl
 sudo apt install bluetooth blueman
-sudo apt install fcitx5 fcitx5-mozc
 
 DSTDIR=~/.config/waybar
 if [ ! -d $DSTDIR ]; then
