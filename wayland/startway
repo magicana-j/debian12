@@ -1,0 +1,6 @@
+#!/bin/sh
+
+export XKB_DEFAULT_LAYOUT=jp
+export MOZ_ENABLE_WAYLAND=1
+
+#exec labwc
