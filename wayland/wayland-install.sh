@@ -1,12 +1,12 @@
 #!/bin/sh
 sudo apt update
 sudo apt install swaybg swayidle swaylock xdg-desktop-portal-wlr xwayland
-sudo apt install wdisplays kanshi waybar mako picom grom slurp grimshot fuzzel foot alacritty fonts-font-awesome
+sudo apt install wdisplays kanshi waybar clipman mako picom grim slurp grimshot fuzzel foot alacritty fonts-font-awesome wlogout wlsunset
 sudo apt install gammastep
-sudo apt install brightnessctl clipman network-manager-gnome
-sudo apt install pipewire-audio wireplumber pipewire-media-session-pulse
-sudo apt install pavucontrol playerctl
-sudo apt install bluetooth blueman
+#sudo apt install brightnessctl clipman network-manager-gnome
+#sudo apt install pipewire-audio wireplumber pipewire-media-session-pulse
+#sudo apt install pavucontrol playerctl
+#sudo apt install bluetooth blueman
 
 DSTDIR=~/.config/waybar
 if [ ! -d $DSTDIR ]; then
